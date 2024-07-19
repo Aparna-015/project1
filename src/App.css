@@ -1,38 +1,104 @@
+
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.shop-card{
+  font-family: 'Times New Roman', Times, serif;
+  justify-content: space-between;
+  background-color: rgb(115, 106, 181);
+  padding: 20px 30px;
+}
+.product{
+  padding: 20px;
+}
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.product {
+  background-color: white;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.product:hover {
+  transform: scale(1.05);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.product img {
+  border-radius: 8px;
+}
+
+.product p {
+  margin: 10px 0;
+}
+
+.product button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #3f51b5;
   color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.product button:hover {
+  background-color: #303f9f;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Cart List Styles */
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.cart-item img {
+  border-radius: 8px;
+}
+
+.cart-item span {
+  margin: 0 10px;
+}
+
+.cart-item button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #3f51b5;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cart-item button:hover {
+  background-color: #303f9f;
+}
+
+/* Total Price */
+.total-price {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
 }
